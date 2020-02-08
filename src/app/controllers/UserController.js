@@ -42,7 +42,7 @@ class UserController {
         .min(6)
         .when('oldPassword', (oldPassword, field) =>
           oldPassword ? field.required : field
-        ),
+        ), // 'When' é usado para criar uma condicional ao uso do schema
       confirmPassword: Yup.string().when('password', (password, field) =>
         password ? field.required().oneOf([Yup.ref('password')]) : field
       ),
@@ -56,7 +56,7 @@ class UserController {
 
     const user = User.findByPk(req.userId);
 
-    if (email !== user.email) {
+    if (email && email !== user.email) {
       const userExists = await User.findOne({ where: { email } });
 
       if (userExists) {

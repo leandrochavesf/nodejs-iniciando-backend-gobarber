@@ -1,4 +1,4 @@
-/** Arquivo responsável por fazer a conexão com o banco de dados e carregar
+/** Arquivo responsável por inicializar a conexão com o banco de dados e carregar
  * seus módulos correlacionados
  */
 
