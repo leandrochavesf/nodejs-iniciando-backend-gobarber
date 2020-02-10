@@ -164,15 +164,15 @@
 
 ### Lesson: "Cadastro de usuários"
 
-39. Create a controller of User in app/controller/Usercontroller.js
-    Function Store to add a new User on database,
+39. Create a controller of User in app/controller/UserController.js
+    function Store to add a new User on database,
 
 40. Import UserController in Routes.js to configure a route to add User.
 
-41. Code a test to identify double entry on database on momento of add User
+41. Code a test to identify double entry on database in moment of add User
 
 42. We don't need return all parameters, so We wipe some parameters to return in
-    User.Controller.js.store()
+    UserController.store()
 
 ### Lesson: "Gerando hash da senha"
 
